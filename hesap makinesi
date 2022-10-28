@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class hesap_makinesi {
+    public static void main(String[] args) {
+
+        int n1, n2, select,sonuc;
+        Scanner hesap = new Scanner(System.in);
+
+        System.out.print("1.SAYIYI GİRİN : ");
+        n1 = hesap.nextInt();
+        System.out.print("2.SAYIYI GİRİN : ");
+        n2 = hesap.nextInt();
+
+        System.out.println("YAPILACAK İŞLEMİ SEÇİNİZ ---> 1)+  2)-  3)*  4)/ ");
+        select = hesap.nextInt();
+
+        if (select == 1) {
+            sonuc=n1+n2;
+            System.out.print("Sonuç = "+sonuc);
+        } else if (select==2) {
+            sonuc=n1-n2;
+            System.out.print("Sonuç = "+sonuc);
+        } else if (select==3) {
+            sonuc=n1*n2;
+            System.out.print("Sonuç = "+sonuc);
+        } else if (select==4) {
+            sonuc=n1/n2;
+            System.out.print("Sonuç = "+sonuc);
+
+        }
+    }
+}
